@@ -8,7 +8,7 @@
   Vagrant.configure("2") do |config|
   config.vm.provider "virtualbox" do |v|
           v.memory = 4096
-          v.cpus = 2
+          v.cpus = 1
   
   # The most common configuration options are documented and commented below.
   # For a complete reference, please see the online documentation at
@@ -72,52 +72,52 @@
     apt-get dist-upgrade -y 
     apt-get install -y shellcheck htop git git-core 
 
-    FILE[0]="~/.bash-it/aliases/custom.aliases.bash "
-    FILE[1]="~/.bash-it/completion/custom.completion.bash "
-    FILE[2]="~/.bash-it/lib/custom.bash"
-    FILE[3]="~/.bash-it/plugins/custom.plugins.bash "
-    FILE[4]="~/.bash-it/custom/themes/zerobytes.theme.bash"
-    FILE[5]=~/.bash-it/custom/themes/zerobytes/colors_zb.theme.bash 
-    FILE[6]=~/.bash-it/custom/themes/zerobytes/exports_zb.theme.bash 
+    FILE[0]='/home/loki/projects.io/bashitlikevagrant/custom.aliases.bash'
+    FILE[1]='/home/loki/projects.io/bashitlikevagrant/custom.completion.bash'
+    FILE[2]='/home/loki/projects.io/bashitlikevagrant/custom.bash'
+    FILE[3]='/home/loki/projects.io/bashitlikevagrant/custom.plugins.bash '
+    FILE[4]='/home/loki/projects.io/bashitlikevagrant/zerobytes.theme.bash'
+    FILE[5]='/home/loki/projects.io/bashitlikevagrant/colors_zb.theme.bash'
+    FILE[6]='/home/loki/projects.io/bashitlikevagrant/exports_zb.theme.bash'
     declare -a "$FILE"
 
     SETLANG="echo 'LC_ALL=en_US.UTF-8'" 
     
-    BASHITREPO="~/.bash-it"
-    SCRIPTDIR="~/.bash-it/custom/themes/zerobytes"
-    EXPSCRIPT="~/.bash-it/custom/themes/zerobytes/exports_zb.theme.bash"
-    FZFDIR=~/.fzf
+    BASHITREPO="/home/loki/.bash-it"
+    SCRIPTDIR="/home/loki/.bash-it/custom/themes/zerobytes"
+    EXPSCRIPT="/home/loki/.bash-it/custom/themes/zerobytes/exports_zb.theme.bash"
+    FZFDIR=/home/loki/.fzf
   
     bashitrepo(){
-      git clone https://github.com/studio2131/bash-it.git ~/.bash-it 
+      git clone https://github.com/studio2131/bash-it.git /home/loki/.bash-it 
     }  
-    fzfinstall(){
-        git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf 
-        ~/./.fzf/install
-    }
     filearray() {
     scriptdir(){
-        mkdir -p "$SCRIPTDIR"
+        mkdir -p "${SCRIPTDIR}"
+    }
+    fzfinstall(){
+        git clone --depth 1 https://github.com/junegunn/fzf.git /home/loki/.fzf 
+        /home/loki/./.fzf/install
     }
     langecho() {
-      touch $FILE[*]
-      "$SETLANG" >> EXPDIR
+      touch ${FILE}[*]
+      "${SETLANG}" >> {EXPDIR}
     }
 
-    if [ -z = "$BASHITREPO" ]; then
-      "$bashitrepo"
-    elseif
-     [ -z = $FZFDIR ]; then
-      "$fzfinstall"
-    elseif
-      [ -z = $SCRIPTDIR ]; then 
-        "$scriptdir"
-    elseif 
-      [ -z = $EXPLANG]; then
-        $langecho
-    elsif
-      [ -z = $FILE[*] ]; then 
-        "$filearray"
-    fi
+    if [ -z = "${BASHITREPO}" ]; then
+      "${bashitrepo}"
+  
+    if  [ -z = ${SCRIPTDIR} ]; then 
+        "${{scriptdir}}"
+     
+    if  [ -z = ${EXPLANG}]; then
+        ${langecho}
+    
+    if [ -z = ${FZFDIR[*]} ]; then
+      "${fzfinstall}"
+    
+    if  [ -z = ${FILE} ]; then 
+        "${filearray}"
     SHELL
   end
+end
