@@ -72,21 +72,6 @@
     apt-get dist-upgrade -y 
     apt-get install -y shellcheck htop git git-core 
 
-    BASHITREPO="~/.bash-it"
-    if [ -z = "$BASHITREPO" ]; then
-      git clone https://github.com/studio2131/bash-it.git ~/.bash-it 
-    fi
-    
-    SCRIPTDIR="~/.bash-it/custom/themes/zerobytes"
-    if [ -z = $SCRIPTDIR ]
-      mkdir -p "$SCRIPTDIR"
-    fi
-    FZFDIR=~/.fzf
-    if [ -z = $FZFDIR ]; then
-      git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf 
-      ~/./.fzf/install
-    fi
-
     FILE[0]="~/.bash-it/aliases/custom.aliases.bash "
     FILE[1]="~/.bash-it/completion/custom.completion.bash "
     FILE[2]="~/.bash-it/lib/custom.bash"
@@ -95,15 +80,45 @@
     FILE[5]=~/.bash-it/custom/themes/zerobytes/colors_zb.theme.bash 
     FILE[6]=~/.bash-it/custom/themes/zerobytes/exports_zb.theme.bash 
     declare -a "$FILE"
-    if [ -z = $FILE[*] ]; then 
-      touch $FILE[*]
-    fi
 
     SETLANG="echo 'LC_ALL=en_US.UTF-8'" 
-    EXPDIR="~/.bash-it/custom/themes/zerobytes/exports_zb.theme.bash"
-
-    if [ -z = EXPDIR ]
+    
+    BASHITREPO="~/.bash-it"
+    SCRIPTDIR="~/.bash-it/custom/themes/zerobytes"
+    EXPSCRIPT="~/.bash-it/custom/themes/zerobytes/exports_zb.theme.bash"
+    FZFDIR=~/.fzf
+  
+    bashitrepo(){
+      git clone https://github.com/studio2131/bash-it.git ~/.bash-it 
+    }  
+    fzfinstall(){
+        git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf 
+        ~/./.fzf/install
+    }
+    filearray() {
+    scriptdir(){
+        mkdir -p "$SCRIPTDIR"
+    }
+    langecho() {
+      touch $FILE[*]
       "$SETLANG" >> EXPDIR
+    }
+
+    if [ -z = "$BASHITREPO" ]; then
+      "$bashitrepo"
+    elseif
+     [ -z = $FZFDIR ]; then
+      "$fzfinstall"
+    elseif
+      [ -z = $SCRIPTDIR ]; then 
+        "$scriptdir"
+    elseif 
+      [ -z = $EXPLANG]; then
+        $langecho
+    elsif
+      [ -z = $FILE[*] ]; then 
+        "$filearray"
     fi
-    SHELL
+  
+  SHELL
 end
