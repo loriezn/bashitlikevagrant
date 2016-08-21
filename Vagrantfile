@@ -119,6 +119,5 @@
       [ -z = $FILE[*] ]; then 
         "$filearray"
     fi
-  
-  SHELL
-end
+    SHELL
+  end
