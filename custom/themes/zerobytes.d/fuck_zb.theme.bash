@@ -1,0 +1,3 @@
+#!/bin/bash
+alias fuck='eval $(thefuck $(fc -ln -1)); history -r'
+

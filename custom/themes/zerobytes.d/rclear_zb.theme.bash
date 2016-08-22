@@ -1,0 +1,4 @@
+#!/bin/bash
+alias rclear="tput reset"
+bind -x '"\C-l": rclear'
+
