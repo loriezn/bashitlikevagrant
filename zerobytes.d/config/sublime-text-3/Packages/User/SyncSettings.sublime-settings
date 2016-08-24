@@ -1,0 +1,46 @@
+{
+  /**
+    * This token allow to plugin do:
+    * - Create a Gist
+    * - Download a Gist
+    * - Upload a Gist
+    * - Delete a Gist
+   */
+  "access_token": "164cdd2165437e12f3004d0cd588b5b753d0abd3",
+
+  /**
+    * This option has a list with the excluded files
+   */
+  "excluded_files": [
+    ".dmg",
+    ".DS_Store",
+    ".DS_Store?",
+    ".exe",
+    ".Spotlight-V100",
+    ".Trashes",
+    "ehthumbs.db",
+    "Package Control.cache",
+    "Package Control.last-run",
+    "Package Control.merged-ca-bundle",
+    "Package Control.system-ca-bundle",
+    "Package Control.user-ca-bundle",
+    "SyncSettings.sublime-settings",
+    "Thumbs.db"
+  ],
+
+  /**
+   * Files that always should be included
+   * Note: The files included here, overwrite the rule `excluded_files`
+   */
+  "included_files": [],
+
+  /**
+   * Gist identifier for upload your configuration
+   */
+  "gist_id": "3ae3ac08765b2c16a5eff2141ccc0c06",
+
+  /**
+   * Download automagically the new version on ST startup
+   */
+  "auto_upgrade": false
+}

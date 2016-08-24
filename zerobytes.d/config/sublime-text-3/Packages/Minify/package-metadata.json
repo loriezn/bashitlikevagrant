@@ -1,0 +1,1 @@
+{"platforms": ["*"], "url": "https://github.com/tssajo/Minify", "version": "1.2.3", "dependencies": [], "sublime_text": "*", "description": "Minify for Sublime Text allows you to quickly minify and/or beautify CSS, JavaScript, JSON, HTML and SVG files -- compatible with ST2 and ST3"}

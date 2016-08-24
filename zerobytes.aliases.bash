@@ -1,4 +1,7 @@
-#!/bin/bash
+#!/usr/bin/env bash
+
+cite 'about-alias'
+about-alias 'zerobytes abbreviations'
 
 # Shortcuts
 alias ls='ls --group-directories-first --time-style=+"%d.%m.%Y %H:%M" --color=auto -F'

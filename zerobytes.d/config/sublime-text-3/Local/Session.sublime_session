@@ -1,0 +1,437 @@
+{
+	"folder_history":
+	[
+	],
+	"last_version": 3114,
+	"last_window_id": 1,
+	"log_indexing": false,
+	"settings":
+	{
+	},
+	"windows":
+	[
+		{
+			"auto_complete":
+			{
+				"selected_items":
+				[
+				]
+			},
+			"buffers":
+			[
+				{
+					"contents": "",
+					"settings":
+					{
+						"buffer_size": 0,
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"contents": "Package Control Messages\n========================\n\nSync Settings\n-------------\n\n  Thanks for install Sync Settings\n  \n  Sync Settings, is a cross-platform solution to keep the Sublime Text configuration updated.\n  \n  How works?\n  Sync Settings uses Github-Gist allowing you to use all features that this service provides.\n  \n  Errors\n  If you find errors in the plugin, you can to execute \"Show Logs\" command and report a new issue with the file content.\n  \n  Donate\n  You are welcome support this project using Paypal \n  https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=7XCNSKK5W7DKJ\n  \n  View on GitHub @mfuentesg\n  https://github.com/mfuentesg/SyncSettings\n\n\nAnsible Vault\n-------------\n\n  Ansible Vault\n  =============\n  \n  Pre-requisites:\n  - [ansible](http://docs.ansible.com/ansible/)\n  \n  When you try to process an encrypted vault, you will need a password.\n  You have the option of specifying you password (in plain text), or\n  specifying your vault password file. If nothing is specified in the\n  settings, then you will be prompted for your password every time.\n  \n  To peek into an encrypted vault, you can either, open your command\n  pallette and search for `Ansible Vault: View` or, you can use the menu:\n  `Tools` > `Ansible Vault` > `View`\n  \n  Viewing will open a new, read only tab. But this will not modify the\n  original vault. If you want to modify a vault, you should `decrypt`\n  instead.\n\n\nGitSavvy\n--------\n\n  # Welcome to GitSavvy\n  \n  GitSavvy provides integration between Sublime Text 3 and Git.\n  \n  If you're a new user and you find yourself asking, _\"Can GitSavvy do X?\"_, there are two places to look.  First, open your command palette and type `GitSavvy: help`.  This will take you to the offline wiki-style documentation.\n  \n  You can also check for configurability options by opening `Preferences > Package Settings > GitSavvy > Settings - Default` in the ST3 menu.  Any optional or configurable behavior will be documented here, along with the default values.\n  \n  If you need help along the way, there's usually someone around in our Gitter channel:\n  https://gitter.im/divmain/GitSavvy\n  \n  Finally, if at any time you encounter a bug, or if you wish that GitSavvy included some missing functionality, please open an issue:\n  https://github.com/divmain/GitSavvy/issues\n\n\nGulp\n----\n\n     _____       _       \n    / ____|     | |      \n   | |  __ _   _| |_ __  \n   | | |_ | | | | | '_ \\ \n   | |__| | |_| | | |_) |\n    \\_____|\\__,_|_| .__/ \n                  | |    \n                  |_|    \n  \n  \n  Sorry to interrupt\n  ==================\n  \n  First of all, thanks for installing sublime-gulp!\n  \n  You can start using it now by choosing 'Gulp' from your command pallete or selecting one of the available snippets.\n  \n  If you want to know a bit more of what you can do with the package you can:\n  \n  * Check the package settings on Preference -> Package Settings -> Gulp -> Settings - Default\n  \n  * Take a look at the README at: https://github.com/NicoSantangelo/sublime-gulp \n  \n  \n  For issues or feature requests, head over to https://github.com/NicoSantangelo/sublime-gulp/issues\n  \n  Thanks again!\n\n\nMinify\n------\n\n  Thank you for installing `Minify` for Sublime Text\n  ==================================================\n  \n  You must complete the installation by installing the required dependencies\n  --------------------------------------------------------------------------\n  \n  1. If you see this message in your Sublime Text editor then you have already installed the `Minify` package.\n      Please proceed to step 2:\n  \n  2. Install Node.js:\n  \n    Windows and Mac OS X users should just visit https://nodejs.org/ and click on the INSTALL button,\n    Linux users can download pre-compiled binary files from https://nodejs.org/download/\n  \n    After successful installation, please make sure that `node` is in your `PATH`, here is how to test it:\n  \n    Open up a shell window (`Terminal` on Mac OS X, `CMD.exe` on Windows) and issue the following command:\n  \n    node --version\n  \n    You should see a version number. But if you see an error message such as `command not found` or something\n    similar then `node` is not available via your `PATH` and you must fix this!\n  \n  3. Install required Node.js CLI apps:\n  \n    From a shell window (`Terminal` on Mac OS X, `CMD.exe` on Windows) issue the following command:\n  \n    npm install -g clean-css uglifycss js-beautify html-minifier uglify-js minjson svgo\n  \n    Notes:\n  \n      If you are on Mac OS X and you get an error here then issue the following command from `Terminal`:\n      `sudo chown -R $USER /usr/local` and then try to issue the npm install command from above again.\n  \n      If you are never going to work with e.g. SVG files then you can leave out `svgo` from the above npm\n      install command. You can also leave out `uglifycss`, etc.\n  \n      If you already have some or all of the above Node.js CLI apps installed on your system then it is\n      recommended to update them all to the latest version with the following command:\n  \n      npm update -g clean-css uglifycss js-beautify html-minifier uglify-js minjson svgo\n  \n    Please test that the installed Node.js CLI apps are available via your `PATH`, here is how:\n  \n    Still from a shell window (`Terminal` on Mac OS X, `CMD.exe` on Windows) issue the following command,\n    for example:\n  \n    cleancss --version\n  \n    You should see a version number. But if you see an error message such as `command not found` or something\n    similar then `cleancss` is not available via your `PATH` and you must fix this!\n  \n    You may want to do this test for all Node.js CLI apps (`cleancss`, `uglifycss`, `js-beautify`, `uglifyjs`,\n    `html-minifier`, `minjson` and `svgo`).\n  \n  \n  What is `Minify`\n  ----------------\n  \n  `Minify` for Sublime Text can create a minified version of a currently open CSS, HTML, JavaScript, JSON or SVG file.\n  \n  `Minify` generates a new file with an altered file extension such as `.min.css`, `.min.html`, `.min.js`, `.min.json`\n  or `.min.svg`.\n  It can be easily configured to generate .map files too for minified CSS and JavaScript files.\n  \n  Compared to other Sublime Text minifier packages `Minify` is very light: the plugin itself is less than 250 lines\n  of Python code. Once installed `Minify` does not need Internet access to do its job, it works offline.\n  \n  `Minify` has been tested under both Sublime Text 2 and Sublime Text 3 and it should work fine on all supported\n  platforms (Linux, Mac OS X and Windows).\n  \n  `Minify` depends on other programs written in Node.js to do its job. Detailed installation instructions for\n  those dependencies are provided above.\n  \n  Which 3rd party programs are used by `Minify`\n  ---------------------------------------------\n  \n  |------------------------------------------------------------------|\n  |            |         Minify           |      Beautify            |\n  |------------|--------------------------|--------------------------|\n  | CSS        | clean-css or uglifycss   | js-beautify --css        |\n  | HTML       | html-minifier            | js-beautify --html       |\n  | JavaScript | uglifyjs                 | uglifyjs --beautify      |\n  | JSON       | minjson (uses UglifyJS)  | minjson (uses UglifyJS)  |\n  | SVG        | svgo                     | svgo --pretty            |\n  |------------------------------------------------------------------|\n  \n  How to use `Minify`\n  -------------------\n  \n  Open a `.css` or `.htm` or `.html` or `.js` or `.json` or `.svg` file in your Sublime Text editor and you can\n  \n    a) use the Context Menu inside the Sublime Text editor window,\n  \n    b) access the `Minify file` or `Beautify file` commands under Tools / Minify menu in Sublime Text,\n  \n    c) use one of the following keyboard shortcuts:\n  \n    `ctrl + alt + m` ( `super + alt + m` on Mac OS X )\n  \n    This minifies the current buffer and saves the minified version into the same directory with the\n    appropriate .min.css or .min.htm or .min.html or .min.js or .min.svg file extension\n    then it opens the minified file in a new editor window.\n  \n    `ctrl + alt + shift + m` ( `super + alt + shift + m` on Mac OS X )\n  \n    This beautifies the current buffer and saves the beautified version into the same directory with the\n    appropriate .beautified.css or .beautified.htm or .beautified.html or .beautified.js or .pretty.svg file\n    extension then it opens the beautified file in a new editor tab.\n  \n  User settings\n  -------------\n  \n  Please place your customized settings into:\n  \n    Preferences > Package Settings > Minify > Settings - User\n  \n  To find out what the possible options are please see:\n  \n    Preferences > Package Settings > Minify > Settings - Default\n  \n  Project settings\n  ----------------\n  \n  You can override the default and user settings for individual projects. Just add a \"Minify\" object to\n  the \"settings\" object in the project's .sublime-project file containing your project specific settings.\n  \n  Example:\n  \n  {\n      \"settings\": {\n          \"Minify\": {\n              \"open_file\": false,\n              \"auto_minify_on_save\": true,\n              \"allowed_file_types\": [\n                  \"css\",\n                  \"js\",\n                  \"svg\"\n              ]\n          }\n      }\n  }\n  \n  License\n  -------\n  \n  See https://github.com/tssajo/Minify/blob/master/LICENSE.md for licensing information.\n\n\nSublimeLinter\n-------------\n\n  \n    ____        _     _ _                _     _       _\n   / ___| _   _| |__ | (_)_ __ ___   ___| |   (_)_ __ | |_ ___ _ __\n   \\___ \\| | | | '_ \\| | | '_ ` _ \\ / _ \\ |   | | '_ \\| __/ _ \\ '__|\n    ___) | |_| | |_) | | | | | | | |  __/ |___| | | | | ||  __/ |\n   |____/ \\__,_|_.__/|_|_|_| |_| |_|\\___|_____|_|_| |_|\\__\\___|_|\n  \n  \n  Welcome to SublimeLinter, a linter framework for Sublime Text 3.\n  \n                   * * * IMPORTANT! * * *\n  \n          SublimeLinter 3 is NOT a drop-in replacement for\n          earlier versions.\n  \n          Linters *NOT* included with SublimeLinter 3, \n          they must be installed separately.\n  \n          The settings are different.\n  \n                  * * * READ THE DOCS! * * *\n  \n  Otherwise you will never know how to install linters, nor will\n  you know about all of the great new features in SublimeLinter 3.\n  \n  For complete documentation on how to install and use SublimeLinter,\n  please see:\n  \n  http://www.sublimelinter.com\n  \n  \n                   _   _      _       _\n                  | | | | ___| |_ __ | |\n                  | |_| |/ _ \\ | '_ \\| |\n                  |  _  |  __/ | |_) |_|\n                  |_| |_|\\___|_| .__/(_)\n                               |_|\n  \n  \n  Hundreds of hours have been spent writing and documenting SublimeLinter\n  to make it the best it can be — easy to use, easy to configure,\n  easy to update, easy to extend. If you use SublimeLinter and feel\n  it is making your coding life better and easier, please consider\n  making a donation to help fund development and support.\n  \n  To donate: https://github.com/SublimeLinter/SublimeLinter3#share-the-love\n  \n  Thank you!\n\n\nLiveReload\n----------\n\n  Changelog:\n  \n  Please be sure to restart Sublime Text to start using this new version. For more information or how to use this plugin visit https://github.com/alepez/LiveReload-sublimetext3\n\n\nMarkdown Preview\n----------------\n\n  Sublime Text 2/3 Markdown Preview\n  =================================\n  \n  Preview and build your markdown files quickly in your web browser from sublime text 2/3. \n  \n  You can use builtin [python-markdown][10] parser or use the [github markdown API][5] for the conversion.\n  \n  **NOTE:** If you choose the GitHub API for conversion (set parser: github in your settings), your code will be sent through https to github for live conversion. You'll have [Github flavored markdown][6], syntax highlighting and EMOJI support for free :heart: :octocat: :gift:. If you make more than 60 calls a day, be sure to set your GitHub API key in the settings :). You can also get most of this in the default Markdown parser with by enabling certain extensions; see \"[Parsing Github Flavored Markdown](#parsing-github-flavored-markdown-)\"\" below for more information.\n  \n  **LINUX users:** If you want to use GitHub API for conversion, you'll need to have a custom Python install that includes python-ssl as its not built in the Sublime Text 2 Linux package. see [@dusteye comment][8]. If you use a custom window manager, also be sure to set a `BROWSER` environment variable. see [@PPvG comments][9]\n  \n  ## Features :\n  \n   - Markdown preview using the [Python-markdown][10] or the Github API just choose select the build commands.\n   - Syntax highlighting via Pygments. See \"[Configuring Pygments](#configuring-pygments)\" for more info.\n   - Build markdown file using Sublime Text build system. The build parser are config via the `\"parser\"` config.\n   - Browser preview auto reload on save if you have the [ST2 LiveReload plugin][7] installed.\n   - Builtin parser : supports `abbr`, `attr_list`, `def_list`, `fenced_code`, `footnotes`, `tables`, `smart_strong`, `smarty`,  `wikilinks`, `meta`, `sane_lists`, `codehilite`, `nl2br`, and `toc` markdown extensions.\n   - CSS search path for local and build-in CSS files (always enabled) and/or CSS overriding if you need\n   - YAML support thanks to @tommi\n   - Clipboard selection and copy to clipboard thanks to @hexatrope\n   - MathJax support : \\\\\\\\(\\frac{\\pi}{2}\\\\\\\\) thanks to @bps10\n   - HTML template customisation thanks to @hozaka\n   - Embed images as base64 (see [settings][settings] file for more info)\n   - Strip out multimarkdown critic marks from either Githubs or Python Markdown input source (see [settings][settings] file for more info)\n   - 3rd party extensions for the Python Markdown parser:\n  \n      | Extension | Documentation |\n      |-----------|---------------|\n      | magiclink | Find and convert HTML links and email address to links ([MagicLink Documentation](http://facelessuser.github.io/pymdown-extensions/extensions/magiclink/)). |\n      | delete | Surround inline text with `~~strike through~~` to get del tags ~~strike through~~. |\n      | insert | Surround inline text with `^^underlined^^` to get ins tags <ins>underlined</ins>. |\n      | tasklist | Github Flavored Markdown tasklists ([Tasklist Documentation](http://facelessuser.github.io/pymdown-extensions/extensions/tasklist/)). |\n      | githubemoji | Support for Github Flavored Markdown emojis ([GithubEmoji Documentation](http://facelessuser.github.io/pymdown-extensions/extensions/githubemoji/)). |\n      | headeranchor | Github Flavored Markdown style header anchors ([HeaderAnchor Documentation](http://facelessuser.github.io/pymdown-extensions/extensions/headeranchor/)). |\n      | github | A convenience extension to add: `magiclink`, `delete`, `tasklist`, `githubemoji`, `headeranchor`, `superfences`, and `nl2br` to parse and display Markdown in a github-ish way.  It is recommed to pair `github` with `extra` and `codehilite` (with language guessing off) to parse close to github's way.  Be aware of what extensions `github` loads, because you should not load extensions more than once. |\n      | progressbar | Create progress bars ([ProgressBar Documentation](http://facelessuser.github.io/pymdown-extensions/extensions/progressbar/)). |\n      | superfences | Allow fenced blocks to be nested under lists, blockquotes, etc. and add special UML diagram blocks ([SuperFences Documentation](http://facelessuser.github.io/pymdown-extensions/extensions/superfences/)). |\n  \n  ## Installation :\n  \n  ### Using [Package Control][3] (*Recommended*)\n  \n  For all Sublime Text 2/3 users we recommend install via [Package Control][3].\n  \n  1. [Install][11] Package Control if you haven't yet.\n  2. Use <kbd>cmd</kbd>+<kbd>shift</kbd>+<kbd>P</kbd> then `Package Control: Install Package`\n  3. Look for `Markdown Preview` and install it.\n  \n  ### Manual Install\n  \n  1. Click the `Preferences > Browse Packages…` menu\n  2. Browse up a folder and then into the `Installed Packages/` folder\n  3. Download [zip package][12] rename it to `Markdown Preview.sublime-package` and copy it into the `Installed Packages/` directory\n  4. Restart Sublime Text\n  \n  ## Usage :\n  \n  ### To preview :\n  \n   - optionally select some of your markdown for conversion\n   - use <kbd>cmd</kbd>+<kbd>shift</kbd>+<kbd>P</kbd> then `Markdown Preview` to show the follow commands (you will be prompted to select which parser you prefer):\n  	- Markdown Preview: Preview in Browser\n  	- Markdown Preview: Export HTML in Sublime Text\n  	- Markdown Preview: Copy to Clipboard\n  	- Markdown Preview: Open Markdown Cheat sheet\n   - or bind some key in your user key binding, using a line like this one:\n     `{ \"keys\": [\"alt+m\"], \"command\": \"markdown_preview\", \"args\": {\"target\": \"browser\", \"parser\":\"markdown\"} },` for a specific parser and target or `{ \"keys\": [\"alt+m\"], \"command\": \"markdown_preview_select\", \"args\": {\"target\": \"browser\"} },` to bring up the quick panel to select enabled parsers for a given target.\n   - once converted a first time, the output HTML will be updated on each file save (with LiveReload plugin)\n  \n  ### Enabling Other External Markdown Parsers :\n  \n  External parser commands and arguments should first be mapped to a name.  The path to the binary should be first, followed by flags etc.\n  \n  ```js\n      \"markdown_binary_map\": {\n          \"multimarkdown\": [\"/usr/local/bin/multimarkdown\"]\n      },\n  ```\n  \n  Then the name can be placed in `enabled_parsers` to enable use of the new parser.\n  \n  ```js\n      \"enabled_parsers\": [\"markdown\", \"github\", \"multimarkdown\"],\n  ```\n  \n  ### To build :\n  \n   - Just use <kbd>ctrl</kbd>+<kbd>B</kbd> (Windows/Linux) or <kbd>cmd</kbd>+<kbd>B</kbd> (Mac) to build current file.\n  \n  ### To config :\n  \n  Using Sublime Text menu: `Preferences`->`Package Settings`->`Markdown Preview`\n  \n  - `Settings - User` is where you change your settings for Markdown Preview.\n  - `Settings - Default` is a good reference with detailed descriptions for each setting.\n  \n  ### Configuring Pygments\n  If you add the codehilite extension manually in the enabled extensions, you can override some of the default settings.\n  \n  * Turn language guessing *on* or *off* (*on* will highlight fenced blocks even if you don't specify a language)  `codehilite(guess_lang=False)` (True|False).\n  * Show line numbers: `codehilite(linenums=True)` (True|False).\n  * Change the higlight theme: `codehilite(pygments_style=emacs)`.\n  * Inline the CSS: `codehilite(noclasses=True)` (True|False).\n  * Use multiple: `codehilite(linenums=True, pygments_style-emacs)`.\n  \n  See [codehilte page](https://pythonhosted.org/Markdown/extensions/code_hilite.html) for more info.\n  \n  ### Meta Data Support\n  When the `meta` extension is enabled (https://pythonhosted.org/Markdown/extensions/meta_data.html), the results will be written to the HTML head in the form `<meta name=\"key\" content=\"value1,value2\">`.  `title` is the one exception, and its content will be written to the title tag in the HTML head.\n  \n  ### YAML Frontmatter Support\n  YAML frontmatter can be stripped out and read when `strip_yaml_front_matter` is set to  `true` in the settings file.  In general the, the fronmatter is handled the same as [meta data](#meta-data-support), but if both exist in a file, the YAML keys will override the `meta` extension keys.  There are a few special keys names that won't be handled as html meta data.\n  \n  #### Special YAML Key Names\n  Yaml frontmatter has a few special key names that are used that will not be handled as meta data:\n  \n  - **basepath**: An absolute path to configure the relative paths for images etc. (for when the markdown is supposed to reference images in a different location.)\n  - **references**: Can take a file path or an array of file paths for separate markdown files containing references, footnotes, etc.  Can be an absolute path or relative path.  Relative paths first use the source file's directory, and if the file cannot be found, it will use the `basepath` setting.\n  - **destination**: This is an absolute file path or relative file path for when the markdown is saved to html via the build command or the `Save to HTML` command.  Relative paths first use the source file's directory, and if the file cannot be found, it will use the `basepath` setting.\n  - **settings**: This is a dictionary where you can override settings that are in the settings file.\n  \n  #### Example\n  ```yaml\n  ---\n      # Builtin values\n      references:\n          - references.md\n          - abbreviations.md\n          - footnotes.md\n  \n      destination: destination.html\n  \n      # Meta Data\n      title: Test Page\n      author:\n          - John Doe\n          - Jane Doe\n  \n      # Settings overrides\n      settings:\n          enabled_extensions:\n          - extra\n          - github\n          - toc\n          - headerid\n          - smarty(smart_quotes=False) # smart quotes interferes with attr_list\n          - meta\n          - wikilinks\n          - admonition\n          - codehilite(guess_lang=False,pygments_style=github)\n  ---\n  ```\n  \n  ### Parsing Github Flavored Markdown :\n  Github Flavored Mardown (GFM) is a very popular markdown.  Markdown Preview can actually handle them in a couple of ways: online and offline.\n  \n  #### Online :\n  Parsing GFM using the online method requires using the Github API as the parser.  It may also require setting `github_mode` to `gfm` to get things like tasklists to render properly. You can set your API key in the settings as follows:\n  \n  ```js\n      \"github_oauth_token\": \"secret\"\n  ```\n  \n  #### Offline :\n  By default almost all extensions are enabled to help with the github feel, but there are some tweaks needed to get the full experience.\n  \n  GFM does not auto guess language in fenced blocks, but Markdown Preview does this by default.  You can fix this in one of two ways:\n  \n  1. Disable auto language guessing in the settings file `\"guess_language\": false,`\n  2. Or if you are manually defining extensions: `\"enabled_extensions\": [\"codehilite(guess_lang=False,pygments_style=github)\"]`\n  \n  \n  As mentioned earlier, almost all extensions are enabled by default, but as a reference, the minimum extensions that should be enabled are listed below:\n  \n  ```javascript\n  	\"enabled_extensions\": [\n  		\"extra\",\n  		\"github\",\n  		\"codehilite(guess_lang=False,pygments_style=github)\"\n  	]\n  ```\n  \n  This may be further enhanced in the future.\n  \n  \n  ## Support :\n  \n  - Any bugs about Markdown Preview please feel free to report [here][issue].\n  - And you are welcome to fork and submit pullrequests.\n  \n  \n  ## License :\n  \n  The code is available at github [project][home] under [MIT licence][4].\n  \n   [home]: https://github.com/revolunet/sublimetext-markdown-preview\n   [3]: https://packagecontrol.io/\n   [4]: http://revolunet.mit-license.org\n   [5]: https://developer.github.com/v3/markdown/\n   [6]: https://help.github.com/articles/github-flavored-markdown/\n   [7]: https://github.com/dz0ny/LiveReload-sublimetext2\n   [8]: https://github.com/revolunet/sublimetext-markdown-preview/issues/27#issuecomment-11772098\n   [9]: https://github.com/revolunet/sublimetext-markdown-preview/issues/78#issuecomment-15644727\n   [10]: https://github.com/waylan/Python-Markdown\n   [11]: https://packagecontrol.io/installation\n   [12]: https://github.com/revolunet/sublimetext-markdown-preview/archive/master.zip\n   [issue]: https://github.com/revolunet/sublimetext-markdown-preview/issues\n   [settings]: https://github.com/revolunet/sublimetext-markdown-preview/blob/master/MarkdownPreview.sublime-settings\n\n\nMaterial Theme\n--------------\n\n  ## Material Theme for Sublime Text 3\n  \n  For more information on the Material Theme: https://github.com/equinusocio/material-theme\n  \n  **********************************************************************************************\n  \n  # Activate the theme\n  \n  You can active this theme from:\n  - Command palette `Tools > Command Palette` (or <kbd>cmd/ctrl</kbd>+ <kbd>↑</kbd>+<kbd>p</\n  kbd>) by typing `Material Theme: Activate theme`. \n  - Context menu (Right click on the editor) and choose `Material Theme > Activate Material Theme`\n  - `Preferences > Packages Settings` and choose `Material Theme > Activate Material Theme`\n  \n  You can also manually activate this theme by adding these lines to your user settings (**Preferences > Settings - User**):\n  \n  ```json\n  \"color_scheme\": \"Packages/Material Theme/schemes/Material-Theme.tmTheme\",\n  \"theme\": \"Material-Theme.sublime-theme\",\n  ```\n  ```\n  \n  **********************************************************************************************\n  \n  ### Other available theme options:\n  \n  ```json\n  \"material_theme_accent_acid-lime\"         : true , // Set acid-lime accent color\n  \"material_theme_accent_blue\"              : true , // Set blue accent color\n  \"material_theme_accent_brba\"              : true , // Set Breaking Bad green accent color\n  \"material_theme_accent_bright-teal\"       : true , // Set bright-teal accent color\n  \"material_theme_accent_cyan\"              : true , // Set cyan accent color\n  \"material_theme_accent_graphite\"          : true , // Set graphite accent color\n  \"material_theme_accent_indigo\"            : true , // Set indigo accent color\n  \"material_theme_accent_lime\"              : true , // Set lime green accent color\n  \"material_theme_accent_orange\"            : true , // Set orange accent color\n  \"material_theme_accent_pink\"              : true , // Set pink accent color\n  \"material_theme_accent_purple\"            : true , // Set purple accent color\n  \"material_theme_accent_red\"               : true , // Set pale red accent color\n  \"material_theme_accent_sky\"               : true , // Set bright-cyan accent color\n  \"material_theme_accent_tomato\"            : true , // Set tomato red accent color\n  \"material_theme_accent_yellow\"            : true , // Set yellow accent color\n  \"material_theme_bold_tab\"                 : true , // Make the tab labels bolder\n  \"material_theme_compact_panel\"            : true , // Set minimal padding for the search panel\n  \"material_theme_compact_sidebar\"          : true , // Set compact side bar\n  \"material_theme_contrast_mode\"            : true , // Enable sidebar and panels contrast mode\n  \"material_theme_disable_fileicons\"        : true , // Hide sidebar file type icons\n  \"material_theme_disable_folder_animation\" : true , // Disable folder animation\n  \"material_theme_disable_tree_indicator\"   : true , // Disable sidebar file indicator\n  \"material_theme_panel_separator\"          : true , // Show bottom panel separator\n  \"material_theme_small_statusbar\"          : true , // Set small status bar\n  \"material_theme_small_tab\"                : true , // Set small tabs\n  \"material_theme_tabs_autowidth\"           : true , // Enable autowidth for tabs\n  \"material_theme_tabs_separator\"           : true , // Show tabs separator, this disables tab hover animation\n  \n  // If you use Material Theme - Appbar addon you can use additional settings:\n  \"material_theme_tree_headings\"            : true , // Show sidebar headings\n  ```\n  \n  **********************************************************************************************\n  \n  ### Recommended UI and font settings for a better experience:\n  \n  ```json\n  {\n    \"overlay_scroll_bars\": \"enabled\",\n    \"line_padding_top\": 3,\n    \"line_padding_bottom\": 3,\n    \"always_show_minimap_viewport\": true,\n    \"bold_folder_labels\": true,\n    \"indent_guide_options\": [ \"draw_normal\", \"draw_active\" ],   // Highlight active indent\n    \"font_options\": [ \"gray_antialias\" ],                       // For retina Mac\n  }\n  ```\n\n\nPackageSync\n-----------\n\n      ____                __                          _____                    \n     / __ \\ ____ _ _____ / /__ ____ _ ____ _ ___     / ___/ __  __ ____   _____\n    / /_/ // __ `// ___// //_// __ `// __ `// _ \\    \\__ \\ / / / // __ \\ / ___/\n   / ____// /_/ // /__ / ,<  / /_/ // /_/ //  __/   ___/ // /_/ // / / // /__  \n  /_/     \\__,_/ \\___//_/|_| \\__,_/ \\__, / \\___/   /____/ \\__, //_/ /_/ \\___/  \n                                   /____/                /____/                \n  \n  Store off-line backup of your packages & restore them on the same or any other machine.\n  \n  Do note that PackageSync only syncs your packages list and your user settings.\n  But the actual installation of missing/new packages requires a working internet connection.\n  \n  For details of the package & it's usage, please visit \n       ==========================================\n       https://github.com/utkarsh9891/PackageSync\n       ==========================================\n  \n  Thank you!\n\n\nSublimeLinter-pyyaml\n--------------------\n\n  SublimeLinter-pyyaml\n  -------------------------------\n  This linter plugin for SublimeLinter provides an interface to pyyaml.\n  \n  ** IMPORTANT! **\n  \n  Before this plugin will activate, you *must*\n  follow the installation instructions here:\n  \n  https://github.com/SublimeLinter/SublimeLinter-pyyaml\n\n\nMaterial Theme - Appbar\n-----------------------\n\n  ___  ___      _            _       _       _____ _\n  |  \\/  |     | |          (_)     | |     |_   _| |\n  | .  . | __ _| |_ ___ _ __ _  __ _| |       | | | |__   ___ _ __ ___   ___\n  | |\\/| |/ _` | __/ _ \\ '__| |/ _` | |       | | | '_ \\ / _ \\ '_ ` _ \\ / _ \\\n  | |  | | (_| | ||  __/ |  | | (_| | |       | | | | | |  __/ | | | | |  __/\n  \\_|  |_/\\__,_|\\__\\___|_|  |_|\\__,_|_|       \\_/ |_| |_|\\___|_| |_| |_|\\___|\n  \n  Material Theme - White Panels Addon\n  https://github.com/equinusocio/material-theme-appbar\n  \n  ******************************************************************************\n  \n  With this addon you can add a tinted app bar to your Material Theme installation.\n  This addon auto fits with material theme accent colors!\n  \n  NOTE: If you've intalled 1.0.0 through Package Control please unistall and reinstall\n  \n  ## Addon options\n  \n  ```json\n  \"material_theme_tree_headings\": true , // Show siderbar headings\n  ```\n\n\nTheme - Interstellar\n--------------------\n\n  ☄ INTERSTELLAR\n  ===============\n  \n  Thank you for installing Interstellar!\n  \n  This series of Sublime Text 3 themes is inspired by a journey into outerspace.  \n  Let your code be illuminated by the shimmer of a planet.\n  \n  > Previews available on the Interstellar webpage: http://flovan.me/interstellar.\n  \n  \n  ---------------\n  \n  \n  To get started, add the following to your preferences:\n  \n  ```\n  {\n    \"theme\": \"Interstellar.sublime-theme\",\n    \"color_scheme\": \"Packages/Theme - Interstellar/sun.tmTheme\"\n  }\n  ```\n  \n  ---------------\n  \n  Happy coding!\n\n\nSeti_UI\n-------\n\n  # Install\n  ---------------\n  Activate the 'Theme' by modifying your user preferences file, which you can find using the menu item\n  `Preferences -> Settings - User` in Sublime Text\n  or use\n  `Schemr` & `Themr` by [Ben Weier](https://github.com/benweier).\n  \n  \n  ## Example\n  ---------------\n  ```\n  {\n    \"theme\": \"Seti.sublime-theme\",\n  \n    \"caret_extra_width\": 2,                 //  to have a wider/thicker caret\n    \"caret_extra_bottom\": 3,                //  to make the caret = to the line height (the theme currently support 0,3,5)\n    \"caret_extra_top\": 3,\n  \n    \"overlay_scroll_bars\": \"enabled\",       //  to show scrollbars only when scrolling\n    \"highlight_line\": true,                 //  to highlight the current line\n  }\n  ```\n  \n  ### notes\n  ---------------\n  - please check the readme for more theme options.\n  \n  - copy the (Resource/fold.png) \"or edit it if you want\" to (Packages/Theme - Default) to override the _focken default yellow code_folding icon.\n  \n  - for better recognition of file types, its recommended to install [Apply​Syntax](https://sublime.wbond.net/packages/ApplySyntax) by facelessuser.\n  \n  \n  ## Folder Contents\n  ----------------------\n  Resource\n    |-Ext   > copy the content of this folder to your 'Packages/User' folder so (Extensions/Files) can recognize their correct language/icons.\n    |-Fonts > install them before applying the sidebar font options.\n\n\nTheme - Gravity\n---------------\n\n  \n  Thanks for using the Gravity theme!\n  \n  You may need to restart Sublime Text for it to display correctly. Also, if sidebar icons are missing,  disabling installed/inactive themes will typically fix it.\n  \n  Feel free to contact me if you have any questions, or need to report any issues:\n  \n  GitHub Issues\n  https://github.com/frankyonnetti/gravity-sublime-theme/issues\n  \n  or Twitter\n  @dh_Frank\n  \n  \n  --------------------------------\n  \n  \n  How to enable:\n  \n  To activate the theme for ST3, add or replace your current theme settings with the code below.\n  \n  For Gravity Theme:\n  \n      \"theme\": \"Gravity.sublime-theme\",\n      \"color_scheme\": \"Packages/Theme - Gravity/Monokai Gravity (SL).tmTheme\"\n  \n  \n  For Reverse Gravity Theme:\n  \n      \"theme\": \"Reverse Gravity.sublime-theme\",\n      \"color_scheme\": \"Packages/Theme - Gravity/Monokai Gravity (SL).tmTheme\"\n  \n  \n  For Gravity One Theme:\n  \n      \"theme\": \"Gravity One.sublime-theme\"\n  \n  Suggest using the \"One Dark Sublime Text 3 Color Scheme\" with Gravity One.\n    - https://github.com/IceTimux/one-dark-sublime-text-3-color-scheme\n  \n  \n  To increase the file tab height use:\n  \n      \"gravity_tab_height_tall\": true\n  \n  \n  To decrease the file tab height use:\n  \n      \"gravity_tab_height_short\": true\n  \n  \n  To decrease the file tab font size use:\n  \n      \"gravity_tab_font_small\": true\n  \n  \n  For the sidebar header option use:\n  \n      \"gravity_sidebar_header\": true\n  \n  \n  For blue highlight color option use:\n  \n      \"gravity_highlight_color_blue\": true\n",
+					"settings":
+					{
+						"buffer_size": 33721,
+						"line_ending": "Unix",
+						"name": "Package Control Messages",
+						"read_only": true,
+						"scratch": true
+					}
+				},
+				{
+					"file": "/home/loki/.bash-it/bash_it.sh",
+					"settings":
+					{
+						"buffer_size": 2183,
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/home/loki/bashitlikevagrant/zerobytes.d/config/sublime-text-3/Packages/User/SyncSettings.sublime-settings",
+					"settings":
+					{
+						"buffer_size": 1006,
+						"line_ending": "Unix"
+					}
+				}
+			],
+			"build_system": "",
+			"build_system_choices":
+			[
+			],
+			"build_varint": "",
+			"command_palette":
+			{
+				"height": 392.0,
+				"last_filter": "colo",
+				"selected_items":
+				[
+					[
+						"colo",
+						"Colorsublime: Install Theme"
+					],
+					[
+						"ip",
+						"Package Control: Install Package"
+					],
+					[
+						"packa",
+						"Package Control: Install Local Dependency"
+					],
+					[
+						"sync",
+						"Sync Settings: Download"
+					]
+				],
+				"width": 467.0
+			},
+			"console":
+			{
+				"height": 126.0,
+				"history":
+				[
+					"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+				]
+			},
+			"distraction_free":
+			{
+				"menu_visible": true,
+				"show_minimap": false,
+				"show_open_files": false,
+				"show_tabs": false,
+				"side_bar_visible": false,
+				"status_bar_visible": false
+			},
+			"file_history":
+			[
+				"/home/loki/bashitlikevagrant/zerobytes.d/config/sublime-text-3/Packages/Sync Settings/SyncSettings.sublime-settings"
+			],
+			"find":
+			{
+				"height": 0.0
+			},
+			"find_in_files":
+			{
+				"height": 0.0,
+				"where_history":
+				[
+				]
+			},
+			"find_state":
+			{
+				"case_sensitive": false,
+				"find_history":
+				[
+				],
+				"highlight": true,
+				"in_selection": false,
+				"preserve_case": false,
+				"regex": false,
+				"replace_history":
+				[
+				],
+				"reverse": false,
+				"show_context": true,
+				"use_buffer2": true,
+				"whole_word": false,
+				"wrap": true
+			},
+			"groups":
+			[
+				{
+					"selected": 1,
+					"sheets":
+					[
+						{
+							"buffer": 0,
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 0,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										0,
+										0
+									]
+								],
+								"settings":
+								{
+									"auto_name": "",
+									"syntax": "Packages/Text/Plain text.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 3,
+							"type": "text"
+						},
+						{
+							"buffer": 1,
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 33721,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										33721,
+										33721
+									]
+								],
+								"settings":
+								{
+									"auto_indent": false,
+									"bracket_highlighter.busy": false,
+									"git_savvy.file_path": null,
+									"syntax": "Packages/Text/Plain text.tmLanguage",
+									"tab_width": 2,
+									"word_wrap": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 3.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 0,
+							"type": "text"
+						},
+						{
+							"buffer": 2,
+							"file": "/home/loki/.bash-it/bash_it.sh",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 2183,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										0,
+										0
+									]
+								],
+								"settings":
+								{
+									"bracket_highlighter.busy": false,
+									"bracket_highlighter.locations":
+									{
+										"close":
+										{
+										},
+										"icon":
+										{
+										},
+										"open":
+										{
+										},
+										"unmatched":
+										{
+										}
+									},
+									"bracket_highlighter.regions":
+									[
+										"bh_unmatched",
+										"bh_unmatched_center",
+										"bh_unmatched_open",
+										"bh_unmatched_close",
+										"bh_unmatched_content",
+										"bh_round",
+										"bh_round_center",
+										"bh_round_open",
+										"bh_round_close",
+										"bh_round_content",
+										"bh_angle",
+										"bh_angle_center",
+										"bh_angle_open",
+										"bh_angle_close",
+										"bh_angle_content",
+										"bh_default",
+										"bh_default_center",
+										"bh_default_open",
+										"bh_default_close",
+										"bh_default_content",
+										"bh_single_quote",
+										"bh_single_quote_center",
+										"bh_single_quote_open",
+										"bh_single_quote_close",
+										"bh_single_quote_content",
+										"bh_curly",
+										"bh_curly_center",
+										"bh_curly_open",
+										"bh_curly_close",
+										"bh_curly_content",
+										"bh_c_define",
+										"bh_c_define_center",
+										"bh_c_define_open",
+										"bh_c_define_close",
+										"bh_c_define_content",
+										"bh_regex",
+										"bh_regex_center",
+										"bh_regex_open",
+										"bh_regex_close",
+										"bh_regex_content",
+										"bh_tag",
+										"bh_tag_center",
+										"bh_tag_open",
+										"bh_tag_close",
+										"bh_tag_content",
+										"bh_square",
+										"bh_square_center",
+										"bh_square_open",
+										"bh_square_close",
+										"bh_square_content",
+										"bh_double_quote",
+										"bh_double_quote_center",
+										"bh_double_quote_open",
+										"bh_double_quote_close",
+										"bh_double_quote_content"
+									],
+									"git_savvy.file_path": "/home/loki/.bash-it/bash_it.sh",
+									"git_savvy.repo_path": "/home/loki/.bash-it",
+									"syntax": "Packages/ShellScript/Shell-Unix-Generic.sublime-syntax",
+									"tab_size": 2,
+									"translate_tabs_to_spaces": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 1,
+							"type": "text"
+						},
+						{
+							"buffer": 3,
+							"file": "/home/loki/bashitlikevagrant/zerobytes.d/config/sublime-text-3/Packages/User/SyncSettings.sublime-settings",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 1006,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										1006,
+										1006
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/JavaScript/JSON.sublime-syntax",
+									"tab_size": 2,
+									"translate_tabs_to_spaces": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 2,
+							"type": "text"
+						}
+					]
+				}
+			],
+			"incremental_find":
+			{
+				"height": 0.0
+			},
+			"input":
+			{
+				"height": 0.0
+			},
+			"layout":
+			{
+				"cells":
+				[
+					[
+						0,
+						0,
+						1,
+						1
+					]
+				],
+				"cols":
+				[
+					0.0,
+					1.0
+				],
+				"rows":
+				[
+					0.0,
+					1.0
+				]
+			},
+			"menu_visible": true,
+			"output.find_results":
+			{
+				"height": 0.0
+			},
+			"pinned_build_system": "",
+			"position": "0,0,0,0,0,15,65,2023,1127,2048,1152",
+			"project": "",
+			"replace":
+			{
+				"height": 0.0
+			},
+			"save_all_on_build": true,
+			"select_file":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_project":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_symbol":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"selected_group": 0,
+			"settings":
+			{
+			},
+			"show_minimap": true,
+			"show_open_files": false,
+			"show_tabs": true,
+			"side_bar_visible": true,
+			"side_bar_width": 150.0,
+			"status_bar_visible": true,
+			"template_settings":
+			{
+			},
+			"window_id": 1,
+			"workspace_name": ""
+		}
+	],
+	"workspaces":
+	{
+		"recent_workspaces":
+		[
+		]
+	}
+}

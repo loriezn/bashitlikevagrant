@@ -1,0 +1,49 @@
+{
+	"Seti_ClosedFolder_dots": false,
+	"Seti_ClosedFolder_remove": false,
+	"Seti_ClosedFolder_same": true,
+	"Seti_SB_big": false,
+	"Seti_SB_orange": false,
+	"Seti_accent": false,
+	"Seti_accent_yellow": true,
+	"Seti_bold_heading": false,
+	"Seti_bold_slctdfile_labels": true,
+	"Seti_bold_slctdtab_labels": false,
+	"Seti_orange_button": false,
+	"Seti_show_group_arrows": true,
+	"always_show_minimap_viewport": true,
+	"bold_folder_labels": true,
+	"color_scheme": "Packages/User/SublimeLinter/Harper (SL).tmTheme",
+	"font_options":
+	[
+		"gray_antialias",
+		"subpixel_antialias"
+	],
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"indent_guide_options":
+	[
+		"draw_normal",
+		"draw_active"
+	],
+	"line_padding_bottom": 3,
+	"line_padding_top": 3,
+	"material_theme_accent_yellow": true,
+	"material_theme_appbar_charcoal": true,
+	"material_theme_appbar_yellow": false,
+	"material_theme_bold_tab": true,
+	"material_theme_compact_panel": true,
+	"material_theme_compact_sidebar": true,
+	"material_theme_contrast_mode": true,
+	"material_theme_panel_separator": true,
+	"material_theme_small_statusbar": true,
+	"material_theme_small_tab": true,
+	"material_theme_tabs_autowidth": true,
+	"material_theme_tabs_separator": true,
+	"material_theme_tree_headings": true,
+	"overlay_scroll_bars": "enabled",
+	"tab_size": 2,
+	"theme": "Default.sublime-theme"
+}

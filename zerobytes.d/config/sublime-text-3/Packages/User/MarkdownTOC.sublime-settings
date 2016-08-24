@@ -1,0 +1,14 @@
+{
+  "default_autoanchor": true,
+  "default_autolink": true,
+  "default_bracket": "square",
+  "default_depth": 2,
+  "default_indent": "\t",
+  "default_lowercase_only_ascii": false,
+  "default_style": "unordered",
+  "id_replacements": {
+    "-": " ",
+    "" : ["&lt;","&gt;","&amp;","&apos;","&quot;","&#60;","&#62;","&#38;","&#39;","&#34;","!","#","$","&","'","(",")","*","+",",","/",":",";","=","?","@","[","]","`","\"", ".","<",">","{","}","™","®","©"]
+  }
+}
+
