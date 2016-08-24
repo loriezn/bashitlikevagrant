@@ -1,29 +1,6 @@
 #!/bin/bash
 
 LC_ALL=en_US.UTF-8
-
-xhost +local:root > /dev/null 2>&1
-if [ -z "$DISPLAY" -a "$XDG_VTNR" -eq 1 ]; then
-    ssh-agent startx -- -dpi 96
-fi
-
-    complete -cf sudo
-
-    shopt -s cdspell
-    shopt -s checkwinsize
-    shopt -s cmdhist
-    shopt -s dotglob
-    shopt -s expand_aliases
-    shopt -s extglob
-    shopt -s histappend
-    shopt -s hostcomplete
-
-    export HISTSIZE=5000
-    export HISTFILESIZE=${HISTSIZE}
-    export HISTCONTROL=ignoreboth
-    export JAVA_FONTS=/usr/share/fonts/TTF
-    export EDITOR=/bin/nano
-
 BROWSER=/usr/bin/xdg-open && export BROWSER
 
 #  GIT
@@ -46,4 +23,3 @@ export NVM_DIR="/home/loki/.nvm"
 #  NVM
 #-------#
 export PATH="$PATH:$HOME/.rvm/bin"
-
